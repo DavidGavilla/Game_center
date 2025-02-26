@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/option_sign_in"
+        android:title="Log in" />
+    <item
+        android:id="@+id/option_sign_up"
+        android:title="Log out" />
+    <item
+        android:id="@+id/account"
+        android:title="Score/Details" />
+</menu>

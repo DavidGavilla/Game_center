@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/main_menu"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_background">
+
+
+
+    <!-- App Bar with Title and Account Button -->
+    <RelativeLayout
+        android:id="@+id/appBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:elevation="4dp"
+        android:background="@drawable/app_bar_background">
+
+        <!-- Title of the App -->
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Game Center"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:fontFamily="sans-serif-medium"
+            android:layout_centerVertical="true"
+            android:textColor="#303030" />
+
+        <!-- Log In Button - Styled as Material Button -->
+        <Button
+            android:id="@+id/btnLogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Account"
+            android:backgroundTint="#FF5252"
+            android:textColor="@android:color/white"
+            android:paddingHorizontal="16dp"
+            android:elevation="2dp"
+            android:textAllCaps="false"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true" />
+    </RelativeLayout>
+
+    <!-- Card View Container for Game Buttons -->
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/appBar"
+        android:layout_marginTop="32dp"
+        android:layout_marginHorizontal="16dp"
+        app:cardCornerRadius="12dp"
+        app:cardElevation="4dp"
+        app:cardBackgroundColor="@android:color/white"
+        app:cardUseCompatPadding="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="24dp">
+
+            <!-- Button for 2048 Game - Styled as Material Button -->
+            <Button
+                android:id="@+id/btn2048"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Play 2048"
+                android:backgroundTint="#2196F3"
+                android:textColor="@android:color/white"
+                android:padding="12dp"
+                android:textSize="16sp"
+                android:fontFamily="sans-serif"
+                android:textAllCaps="false"
+                android:elevation="2dp"
+                app:cornerRadius="8dp" />
+
+            <!-- Button for Snake Game - Styled as Material Button -->
+            <Button
+                android:id="@+id/btnSnakeGame"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Play Snake Game"
+                android:backgroundTint="#4CAF50"
+                android:textColor="@android:color/white"
+                android:padding="12dp"
+                android:textSize="16sp"
+                android:fontFamily="sans-serif"
+                android:textAllCaps="false"
+                android:layout_marginTop="16dp"
+                android:elevation="2dp"
+                app:cornerRadius="8dp" />
+
+            <!-- Button to View Scores - Styled as Material Button -->
+            <Button
+                android:id="@+id/btnScores"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="View Scores"
+                android:backgroundTint="#FF9800"
+                android:textColor="@android:color/white"
+                android:padding="12dp"
+                android:textSize="16sp"
+                android:fontFamily="sans-serif"
+                android:textAllCaps="false"
+                android:layout_marginTop="16dp"
+                android:elevation="2dp"
+                app:cornerRadius="8dp" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>
