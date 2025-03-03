@@ -1,0 +1,12 @@
+<resources>
+    <string name="game_1">SnakeGame</string>
+    <string name="app_name">GamesCenter</string>
+    <string name="back">Back</string>
+    <string name="select_game">Select Game</string>
+    <string name="select_player">Select Player</string>
+
+    <string-array name="sort_options">
+        <item>Highest Score</item>
+        <item>Most Recent</item>
+    </string-array>
+</resources>
